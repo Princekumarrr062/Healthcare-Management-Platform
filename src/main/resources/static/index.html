@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Healthcare Management Platform</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>Healthcare Management Platform</h1><p>Clinical Operations Dashboard</p></header>
+<main>
+<section class="cards"><div><b id="patients">0</b><span>Patients</span></div><div><b id="doctors">0</b><span>Doctors</span></div><div><b id="appointments">0</b><span>Appointments</span></div></section>
+<section class="panel"><h2>Add Patient</h2>
+<form id="patientForm"><input id="name" placeholder="Full name" required><input id="age" type="number" placeholder="Age" required>
+<select id="gender"><option>Male</option><option>Female</option><option>Other</option></select>
+<input id="phone" placeholder="Phone" required><input id="email" type="email" placeholder="Email">
+<input id="bloodGroup" placeholder="Blood group"><button>Add Patient</button></form></section>
+<section class="panel"><h2>Patients</h2><table><thead><tr><th>ID</th><th>Name</th><th>Age</th><th>Gender</th><th>Phone</th><th>Action</th></tr></thead><tbody id="patientRows"></tbody></table></section>
+</main>
+<script src="app.js"></script></body></html>

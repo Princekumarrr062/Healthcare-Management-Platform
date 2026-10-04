@@ -1,0 +1,15 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# Maven
+target/
+
+# Local H2 database
+data/
+
+# Logs
+*.log
