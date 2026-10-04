@@ -1,44 +1,65 @@
-# Healthcare Management Platform for Clinical Operations
+# Healthcare Management Platform
 
-A Spring Boot starter project for clinical operations management.
+A web-based Healthcare Management Platform developed using Java, Spring Boot, Spring Data JPA, H2 Database, HTML, CSS, and JavaScript.
 
-## Technology
-- Java 17
-- Spring Boot
+## Features
+
+- Patient Management
+  - Add patients
+  - View patients
+  - Delete patients
+
+- Doctor Management
+  - Add doctors
+  - View doctors
+  - Delete doctors
+
+- Appointment Management
+  - Create appointments
+  - View appointments
+  - Delete appointments
+  - Manage appointment status
+
+- Dashboard
+  - Total patients
+  - Total doctors
+  - Total appointments
+
+## Technologies Used
+
+- Java 24
+- Spring Boot 3.5.6
 - Spring Data JPA
+- Spring Web
+- Spring Validation
 - H2 Database
-- HTML/CSS/JavaScript
+- HTML5
+- CSS3
+- JavaScript
 - Maven
+- Git & GitHub
 
-## Current modules
-1. Patient management: create, list, delete, update API
-2. Doctor management
-3. Appointment management
-4. Clinical operations dashboard
-5. H2 database for local development
+## Project Structure
 
-## Run
-Open the project in IntelliJ IDEA and run `HealthcareApplication.java`.
-
-Or from terminal:
-`mvn spring-boot:run`
-
-Open:
-`http://localhost:8080`
-
-H2 console:
-`http://localhost:8080/h2-console`
-JDBC URL: `jdbc:h2:file:./data/healthcaredb`
-User: `sa`
-Password: empty
-
-## API
-- GET/POST `/api/patients`
-- GET/PUT/DELETE `/api/patients/{id}`
-- GET/POST `/api/doctors`
-- DELETE `/api/doctors/{id}`
-- GET/POST `/api/appointments`
-- PATCH `/api/appointments/{id}/status?value=COMPLETED`
-
-## Important
-This is a project starter based on the project title you provided, not an official Infosys confidential specification. Match it against any official requirements you later receive.
+```text
+Healthcare-Management-Platform
+│
+├── src
+│   └── main
+│       ├── java
+│       │   └── com.prince.healthcare
+│       │       ├── appointment
+│       │       ├── doctor
+│       │       ├── patient
+│       │       └── HealthcareApplication.java
+│       │
+│       └── resources
+│           ├── static
+│           │   ├── index.html
+│           │   ├── app.js
+│           │   └── style.css
+│           └── application.properties
+│
+├── pom.xml
+├── README.md
+└── .gitignore
